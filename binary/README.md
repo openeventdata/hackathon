@@ -16,10 +16,10 @@ Easily imported into Hive or Impala
 
 ## Installation 
 
-brew install protobuf
-brew install snappy 
-pip install python-snappy
-pip install protobuf 
+    brew install protobuf
+    brew install snappy 
+    pip install python-snappy
+    pip install protobuf 
 
 protoc --python_out=. gdelt.proto
 
