@@ -137,6 +137,6 @@ CREATE TABLE gdelt_rcfiletest
 
 
 
-INSERT OVERWRITE gdelt_rcfiletest SELECT * FROM gdelt_tsvtest;
+INSERT OVERWRITE TABLE gdelt_rcfiletest SELECT * FROM default.gdelt_tsvtest;
 
 
