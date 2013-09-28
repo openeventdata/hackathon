@@ -1,5 +1,5 @@
 
-# hadoop block size 128 MB ??
+-- hadoop block size 128 MB, may need to be optmized 
 
 
 DROP TABLE IF EXISTS gdelt_rcfiletest;
@@ -69,7 +69,7 @@ CREATE TABLE gdelt_rcfiletest
   ActionGeo_FeatureID INT, 
   DATEADDED INT,
   SOURCEURL STRING 
-);
+) STORED AS RCFILE;
 
 
 
