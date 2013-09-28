@@ -42,6 +42,13 @@ Download csv files to a cluster
     
     impala-shell -i localhost < create_gdelt.sql
 
+    imapala-shell -i localhost 
+
+    # run manual queries 
+
+    select count(*) from gdelt;
+
+    select SQLDATE, ActionGeo_FullName, count(*) from gdelt where ActionGeo_CountryCode = 'EG' AND QuadClass > 2 Group By SQLDATE, ActionGeo_FullName ORDER BY SQLDATE LIMIT 100000;
      
 
 
