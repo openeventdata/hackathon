@@ -7,14 +7,15 @@
 
 https://github.com/tlpinney/funnelcloud/tree/master/clouds/gdelt
 
-Recommended for the hackathon to use normal instances because ec2 pricing 
-this weekend is very unstable 
+Spot pricing is unstable this weekend. Recommended to use normal ec2 instances
+for now.
 
 
 ## Requirements 
 
 CDH4 that supports Parquet 
 
+## Installation 
 
 Download csv files to a cluster 
 
