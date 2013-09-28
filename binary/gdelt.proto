@@ -1,0 +1,76 @@
+
+
+
+
+
+option optimize_for = LITE_RUNTIME; 
+option java_package = "org.gdelt.event";
+package binary;
+
+
+message EventGroup {
+  repeated Event events = 1;
+}
+
+
+message Event { 
+  required sint64 GLOBALEVENTID = 1;
+  optional string SQLDATE = 2;
+  optional string MonthYear = 3; 
+  optional string Year = 4;
+  optional string FractionDate = 5; 
+  optional string Actor1Code = 6; 
+  optional string Actor1Name = 7; 
+  optional string Actor1CountryCode = 8; 
+  optional string Actor1KnownGroupCode = 9; 
+  optional string Actor1EthnicCode = 10; 
+  optional string Actor1Religion1Code = 11; 
+  optional string Actor1Religion2Code = 12; 
+  optional string Actor1Type1Code = 13; 
+  optional string Actor1Type2Code = 14; 
+  optional string Actor1Type3Code = 15; 
+  optional string Actor2Code = 16; 
+  optional string Actor2Name = 17; 
+  optional string Actor2CountryCode = 18; 
+  optional string Actor2KnownGroupCode = 19; 
+  optional string Actor2EthnicCode = 20; 
+  optional string Actor2Religion1Code = 21; 
+  optional string Actor2Religion2Code = 22; 
+  optional string Actor2Type1Code = 23;
+  optional string Actor2Type2Code = 24; 
+  optional string Actor2Type3Code = 25; 
+  optional string IsRootEvent = 26;
+  optional string EventCode = 27; 
+  optional string EventBaseCode = 28; 
+  optional string EventRootCode = 29; 
+  optional sint32 QuadClass = 30; 
+  optional double GoldsteinScale = 31; 
+  optional sint32 NumMentions = 32; 
+  optional sint32 NumSources = 33; 
+  optional sint32 NumArticles = 34; 
+  optional double AvgTone = 35; 
+  optional sint32 Actor1Geo_Type = 36; 
+  optional string Actor1Geo_FullName = 37; 
+  optional string Actor1Geo_CountryCode = 38; 
+  optional string Actor1Geo_ADM1Code = 39;
+  optional float Actor1Geo_Lat = 40; 
+  optional float Actor1Geo_Long = 41; 
+  optional sint32 Actor1Geo_FeatureID = 42; 
+  optional sint32 Actor2Geo_Type = 43; 
+  optional string Actor2Geo_FullName = 44; 
+  optional string Actor2Geo_CountryCode = 45; 
+  optional string Actor2Geo_ADM1Code = 46; 
+  optional float Actor2Geo_Lat = 47; 
+  optional float Actor2Geo_Long = 48; 
+  optional sint32 Actor2Geo_FeatureID = 49; 
+  optional sint32 ActionGeo_Type = 50; 
+  optional string ActionGeo_FullName = 51; 
+  optional string ActionGeo_CountryCode = 52; 
+  optional string ActionGeo_ADM1Code = 53; 
+  optional float ActionGeo_Lat = 54; 
+  optional float ActionGeo_Long = 55; 
+  optional sint32 ActionGeo_FeatureID = 56; 
+  optional sint32 DATEADDED = 57;
+  optional string SOURCEURL = 58; 
+
+}
